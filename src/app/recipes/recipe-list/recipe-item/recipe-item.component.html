@@ -1,0 +1,17 @@
+<a href="#" (click)="selectedRecipe(recipe)" class="list-group-item clearfix">
+  <div class="d-flex justify-content-between">
+    <div class="float-left">
+      <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
+      <p class="list-group-item-text">{{ recipe.description }}</p>
+    </div>
+    <div class="float-right">
+      <span class="">
+        <img
+          [src]="recipe.imagePath"
+          style="max-height: 70px"
+          class="img-responsive"
+        />
+      </span>
+    </div>
+  </div>
+</a>
